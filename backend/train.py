@@ -1,4 +1,3 @@
-import pandas as pd
 import numpy as np
 import joblib
 
@@ -76,3 +75,5 @@ mae = mean_absolute_error(y_test, prediction)
 print("Mean Squared Error:", rmse)
 print("R-squared:", r2)
 print("Mean Absolute Error:", mae)
+
+joblib.dump(model_pipeline, "model.pkl")
