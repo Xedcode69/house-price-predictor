@@ -72,8 +72,8 @@ rmse = np.sqrt(mean_squared_error(y_test, prediction))
 r2 = r2_score(y_test, prediction)
 mae = mean_absolute_error(y_test, prediction)
 
-print("Mean Squared Error:", rmse)
-print("R-squared:", r2)
-print("Mean Absolute Error:", mae)
-
 joblib.dump(model_pipeline, "model.pkl")
+
+# print("Mean Squared Error:", rmse)
+# print("R-squared:", r2)
+# print("Mean Absolute Error:", mae)
