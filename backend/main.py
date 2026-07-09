@@ -34,4 +34,4 @@ def predict_price(house_data: HousePriceInput):
 
     prediction = model.predict(input_df)
 
-    return {"predicted_price": float(prediction[0])}
+    return {"predicted_price": f"{float(prediction[0]):.2f}"}
