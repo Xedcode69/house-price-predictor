@@ -91,10 +91,10 @@ function App() {
         </form>
 
         {price && (
-          <div className="result">Predicted Price: <strong>LKR {price.toLocaleString()}</strong></div>
+          <div className="result">Predicted Price: <strong> {price.toLocaleString()}K</strong></div>
         )}
       </main>
-    </div>
+    </div>    
   );
 }
 
